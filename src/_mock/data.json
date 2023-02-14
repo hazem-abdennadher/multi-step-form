@@ -1,0 +1,20 @@
+{
+  "steps": [
+    {
+      "title": "Personal info",
+      "description": "Please provide your name,email and phone number"
+    },
+    {
+      "title": "Step 2",
+      "description": "This is the second step"
+    },
+    {
+      "title": "Step 3",
+      "description": "This is the third step"
+    },
+    {
+      "title": "Step 4",
+      "description": "This is the fourth step"
+    }
+  ]
+}

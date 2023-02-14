@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/Ubuntu-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/Ubuntu-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/Ubuntu-Medium.ttf');
+  font-weight: 500;
+}
+
+.btn {
+  @apply rounded capitalize text-xs font-medium tracking-wider cursor-pointer  disabled:bg-neutral-coolGray;
+}
+.btn-primary {
+  @apply bg-primary-marineBlue text-white py-2 px-4;
+}
+.btn-secondary {
+  @apply text-neutral-coolGray;
+}
