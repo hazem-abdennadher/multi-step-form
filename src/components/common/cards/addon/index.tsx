@@ -17,7 +17,7 @@ export const AddonCard: FC<AddonCardProps> = ({
   return (
     <div
       onClick={onClick}
-      className={`transition-all  duration-300 flex flex-row items-center justify-between gap-4 border p-4 rounded-md   ${
+      className={`transition-all  duration-300 flex flex-row items-center justify-start gap-4 border p-4 rounded-md   ${
         selected && 'border-primary-purplishBlue bg-blue-50'
       }
        `}
@@ -31,9 +31,9 @@ export const AddonCard: FC<AddonCardProps> = ({
       </div>
       <div>
         <h3 className="font-bold text-primary-marineBlue">{title}</h3>
-        <p className="text-neutral-coolGray">{description}</p>
+        <p className="text-neutral-coolGray text-[0.7rem]">{description}</p>
       </div>
-      <p className="font-medium text-primary-purplishBlue">{price}</p>
+      <p className="font-medium text-primary-purplishBlue ml-auto">{price}</p>
     </div>
   );
 };

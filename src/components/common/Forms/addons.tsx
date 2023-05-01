@@ -31,22 +31,22 @@ const AddonsForm = () => {
         title="Online service"
         description="Access to multiplayer games"
         price={planDuration === 'monthly' ? '+$1/mo' : '+$10/yr'}
-        selected={state.addons.includes('Online service')}
-        onClick={() => handleClick('Online service')}
+        selected={state.addons.includes('onlineService')}
+        onClick={() => handleClick('onlineService')}
       />
       <AddonCard
         title="Larger storage"
         description="Extra 1TB of cloud save"
         price={planDuration === 'monthly' ? '+$2/mo' : '+$20/yr'}
-        selected={state.addons.includes('Larger storage')}
-        onClick={() => handleClick('Larger storage')}
+        selected={state.addons.includes('largerStorage')}
+        onClick={() => handleClick('largerStorage')}
       />
       <AddonCard
         title="Customizable profile"
         description="Custom theme on your profile"
         price={planDuration === 'monthly' ? '+$2/mo' : '+$20/yr'}
-        selected={state.addons.includes('Customizable profile')}
-        onClick={() => handleClick('Customizable profile')}
+        selected={state.addons.includes('customizableProfile')}
+        onClick={() => handleClick('customizableProfile')}
       />
     </div>
   );

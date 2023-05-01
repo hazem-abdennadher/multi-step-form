@@ -7,4 +7,20 @@ export type Step = {
 //MultiStepForm is an object with steps
 export type FormSteps = {
   steps: Step[];
+  options?: OptionsProps;
+};
+export type StepperProps = {
+  options?: OptionsProps;
+}
+
+export type OptionsProps = {
+  btns?:{
+    prevBtn?: React.ReactNode;
+    nextBtn?: React.ReactNode;
+    submitBtn?: React.ReactNode;
+  }
+  startStep?: number;
+  onSubmit?: (data: any) => void;
+  onPrev?: (data: any) => void;
+  onNext?: (data: any) => void;
 };

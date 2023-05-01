@@ -9,7 +9,7 @@ const FormStep: React.FC<StepFormProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-white flex flex-col py-8 px-4 items-start gap-8 rounded-lg ml-4 mr-4 ">
+    <div className="bg-white flex flex-col py-8 px-4 items-start gap-8 rounded-lg m-4 ">
       <header className="flex flex-col items-start gap-2">
         <h1 className="text-2xl font-bold text-primary-marineBlue">{title}</h1>
         <p className="text-md text-neutral-coolGray w-[80%]">{description}</p>

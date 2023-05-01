@@ -16,6 +16,24 @@ export type FormType = {
   plan: 'arcade' | 'pro' | 'advanced';
   planDuration: 'monthly' | 'yearly';
   addons: string[];
+  prices:{
+    monthly: {
+      arcade: number;
+      pro: number;
+      advanced: number;
+      onlineService: number;
+      largerStorage: number;
+      customizableProfile: number;
+    },
+    yearly: {
+      arcade: number;
+      pro: number;
+      advanced: number;
+      onlineService: number;
+      largerStorage: number;
+      customizableProfile: number;
+    }
+  }
 };
 
 export const initialState: FormType = {
@@ -25,6 +43,24 @@ export const initialState: FormType = {
   plan: 'arcade',
   planDuration: 'monthly',
   addons: [],
+  prices:{
+    monthly: {
+      arcade: 90,
+      pro: 120,
+      advanced: 150,
+      onlineService: 1,
+      largerStorage: 2,
+      customizableProfile: 2,
+    },
+    yearly: {
+      arcade: 90,
+      pro: 120,
+      advanced: 150,
+      onlineService: 10,
+      largerStorage: 20,
+      customizableProfile: 20,
+    }
+  }
 };
 export const FormReducer = (
   state: FormType,

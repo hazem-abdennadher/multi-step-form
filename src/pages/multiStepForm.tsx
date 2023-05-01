@@ -1,12 +1,13 @@
 import Stepper from '@components/stepper';
-import { MultiStepFormProvider } from 'context/multiStepFormContext';
+import { MultiStepFormProvider, useMultiStepForm } from 'context/multiStepFormContext';
 import { FC } from 'react';
 import { FormSteps } from 'types/multiStepFormTypes';
 
-const MultiStepFrom: FC<FormSteps> = ({ steps }) => {
+const MultiStepFrom: FC<FormSteps> = ({ steps,options }) => {
+
   return (
-    <MultiStepFormProvider steps={steps}>
-      <Stepper />
+    <MultiStepFormProvider steps={steps} >
+      <Stepper  options={options} />
     </MultiStepFormProvider>
   );
 };
